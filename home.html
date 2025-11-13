@@ -1,65 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | LinkedIn</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-</head>
-<body>
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">Linked<span>In</span></div>
-        <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
-    </div>
-    <div class="search-box">
-        <img src="img/search.png">
-        <input type="text" placeholder="Search">
-    </div>
-    <nav>
-      <ul>
-                <li><a href="#" class="active-link"><img src="img/home.png"> <span>Home</span></a></li>
-                <li><a href="#"><img src="img/network.png"> <span>My Network</span></a></li>
-                <li><a href="#"><img src="img/jobs.png"> <span>Jobs</span></a></li>
-                <li><a href="#"><img src="img/message.png"> <span>Messaging</span></a></li>
-                <li><a href="#"><img src="img/notification.png"> <span>Notifications</span></a></li>
-        </ul>
-    </nav>
-  </header>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | LinkedIn</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
 
-  <main class="main-container">
-    <aside class="sidebar-left">
-      <h3>Profile</h3>
-      <p>Anna Ndour</p>
-      <p>Computer Science Student</p>
-    </aside>
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
 
-    <section class="feed">
-      <h3>News Feed</h3>
-      <div class="post">
-        <div class="post-header">
-          <strong>Anna Ndour</strong> - Developer
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-left">
+        <div class="logo">
+          Linked<span>In</span>
+          <a href="index.html" class="logo"
+            ><img src="img/logo.png" alt=""
+          /></a>
         </div>
-        <div class="post-content">
-          First LinkedIn project in HTML, CSS and JavaScript 🚀
-        </div>
-        <div class="post-footer">
-          <button class="like-btn">👍 Like <span class="like-count">0</span></button>
+
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" />
         </div>
       </div>
-    </section>
 
-    <aside class="sidebar-right">
-      <h3>Suggestions</h3>
-      <ul>
-        <li>Elon Musk</li>
-        <li>Grace Hopper</li>
-        <li>Mark Zuckerberg</li>
-      </ul>
-    </aside>
-  </main>
+      <nav class="header-nav">
+        <ul>
+          <li>
+            <a class="active-link"
+              ><i class="fa-solid fa-house"></i><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a><i class="fa-solid fa-user"></i><span>My Network</span></a>
+          </li>
+          <li>
+            <a><i class="fa-solid fa-bag-shopping"></i><span>Jobs</span></a>
+          </li>
+          <li>
+            <a><i class="fa-solid fa-comments"></i><span>Messaging</span></a>
+          </li>
+          <li>
+            <a><i class="fa-solid fa-bell"></i><span>Notifications</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <script src="script.js"></script>
-</body>
+    <!-- MAIN -->
+    <main class="main-container">
+      <!-- LEFT SIDEBAR -->
+      <aside class="sidebar-left">
+        <!-- PROFILE CARD -->
+        <div class="profile-card">
+          <div class="banner"></div>
+          <img
+            src="https://i.pinimg.com/736x/71/8f/54/718f54fe5ca67f994734d27c09b85228.jpg"
+            class="profile-img"
+          />
+          <h3>Anna Ndour</h3>
+          <p>Web Developer | Student</p>
+
+          <div class="profile-stats">
+            <div>
+              <span>Vues du profil</span>
+              <strong>4</strong>
+            </div>
+            <div>
+              <span>Impressions du post</span>
+              <strong>11</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- PREMIUM CARD -->
+        <div class="premium-card">
+          <h4>Essayez Premium gratuitement</h4>
+          <p>Accédez à des outils exclusifs.</p>
+        </div>
+      </aside>
+
+      <!-- CENTER FEED -->
+      <section class="feed">
+        <!-- GREETING CARD -->
+        <div class="greeting-card">
+          <img
+            src="https://i.pinimg.com/736x/71/8f/54/718f54fe5ca67f994734d27c09b85228.jpg"
+            class="greeting-img"
+          />
+          <h3>Bonjour Anna Ndour, vous recrutez ?</h3>
+          <p>Informez vos relations que vous recrutez.</p>
+
+          <div class="greeting-buttons">
+            <button class="btn-primary">Oui, je recrute</button>
+            <button class="btn-light">Non, pas maintenant</button>
+          </div>
+        </div>
+
+        <!-- CREATE POST -->
+        <div class="create-post">
+          <div class="create-top">
+            <img
+              src="https://i.pinimg.com/736x/71/8f/54/718f54fe5ca67f994734d27c09b85228.jpg"
+              class="create-img"
+            />
+            <input placeholder="Commencer un post" />
+          </div>
+
+          <div class="create-actions">
+            <button><i class="fa-solid fa-video"></i> Vidéo</button>
+            <button><i class="fa-solid fa-image"></i> Photo</button>
+            <button><i class="fa-solid fa-pen"></i> Rédiger un article</button>
+          </div>
+        </div>
+
+        <!-- POST 1 -->
+        <div class="post">
+          <div class="post-header">
+            <img
+              src="https://i.pinimg.com/736x/71/8f/54/718f54fe5ca67f994734d27c09b85228.jpg"
+            />
+            <div>
+              <strong>Anna Ndour</strong>
+              <p>Developer</p>
+            </div>
+          </div>
+
+          <p class="post-text">
+            Premier projet LinkedIn en HTML, CSS et JavaScript 🚀
+          </p>
+
+          <img
+            src="https://i.pinimg.com/1200x/1a/dc/05/1adc05dca87c622d7a9b673376d268d8.jpg"
+            class="post-image"
+          />
+
+          <div class="post-actions">
+            <button><i class="fa-regular fa-thumbs-up"></i> J’aime</button>
+            <button><i class="fa-regular fa-comment"></i> Commenter</button>
+            <button><i class="fa-solid fa-repeat"></i> Republier</button>
+            <button><i class="fa-solid fa-share"></i> Partager</button>
+          </div>
+        </div>
+
+        <!-- POST 2 -->
+        <div class="post">
+          <div class="post-header">
+            <img
+              src="https://i.pinimg.com/736x/ac/15/47/ac15471acd1e4b9580e4ab69c46ec5bd.jpg"
+            />
+            <div>
+              <strong>Tech Insider</strong>
+              <p>Organisation</p>
+            </div>
+          </div>
+
+          <p class="post-text">
+            L’IA ne remplace pas les développeurs. Elle améliore leur manière de
+            travailler 💡
+          </p>
+
+          <img
+            src="https://i.pinimg.com/736x/bf/df/34/bfdf347941e0c16abe5a72fdbdd46075.jpg"
+            class="post-image"
+          />
+
+          <div class="post-actions">
+            <button><i class="fa-regular fa-thumbs-up"></i> J’aime</button>
+            <button><i class="fa-regular fa-comment"></i> Commenter</button>
+            <button><i class="fa-solid fa-repeat"></i> Republier</button>
+            <button><i class="fa-solid fa-share"></i> Partager</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- RIGHT SIDEBAR -->
+      <aside class="sidebar-right">
+        <div class="suggestions-card">
+          <h3>Suggestions</h3>
+
+          <ul>
+            <li>
+              <img
+                src="https://i.pinimg.com/1200x/31/81/a9/3181a9109be2a7a634ad8d13263f8e03.jpg"
+              />
+              Elon Musk
+            </li>
+            <li>
+              <img
+                src="https://i.pinimg.com/1200x/31/17/3a/31173a830741b55db5553b66abd3cb6e.jpg"
+              />
+              Grace Hopper
+            </li>
+            <li>
+              <img
+                src="https://i.pinimg.com/736x/5c/a5/9e/5ca59e87bf8bba9b589ac5169d5b976b.jpg"
+              />
+              Mark Zuckerberg
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+  </body>
 </html>
